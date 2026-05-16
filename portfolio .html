@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Portfolio</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#eef2ff;
+      color:#222;
+    }
+
+    /* Header */
+
+    .header{
+      background:linear-gradient(to right,#2563eb,#3b82f6);
+      color:white;
+      text-align:center;
+      padding:90px 20px;
+    }
+
+    .header h1{
+      font-size:60px;
+      margin-bottom:15px;
+    }
+
+    .header p{
+      font-size:24px;
+    }
+
+    /* Sections */
+
+    section{
+      width:90%;
+      max-width:1100px;
+      margin:50px auto;
+      background:white;
+      padding:40px;
+      border-radius:18px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    section h2{
+      color:#2563eb;
+      margin-bottom:25px;
+      font-size:38px;
+      border-bottom:3px solid #2563eb;
+      display:inline-block;
+      padding-bottom:5px;
+    }
+
+    /* About */
+
+    .about{
+      display:flex;
+      align-items:center;
+      gap:35px;
+      flex-wrap:wrap;
+    }
+
+    .about img{
+      width:240px;
+      height:240px;
+      border-radius:50%;
+      object-fit:cover;
+      border:6px solid #2563eb;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .about-text{
+      flex:1;
+    }
+
+    .about-text p{
+      font-size:20px;
+      line-height:1.8;
+      color:#444;
+    }
+
+    /* Skills */
+
+    .skills-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:15px;
+      margin-top:20px;
+    }
+
+    .skill{
+      background:#2563eb;
+      color:white;
+      padding:12px 24px;
+      border-radius:30px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .skill:hover{
+      background:#1d4ed8;
+      transform:scale(1.05);
+    }
+
+    /* Projects */
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:20px;
+    }
+
+    .project-card{
+      background:#f8fbff;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .project-card h3{
+      color:#1d4ed8;
+      margin-bottom:12px;
+      font-size:26px;
+    }
+
+    .project-card p{
+      color:#555;
+      line-height:1.6;
+      font-size:17px;
+    }
+
+    /* Resume */
+
+    .resume-btn{
+      display:inline-block;
+      margin-top:20px;
+      background:#2563eb;
+      color:white;
+      padding:15px 28px;
+      border-radius:10px;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .resume-btn:hover{
+      background:#1d4ed8;
+    }
+
+    /* Contact */
+
+    .contact p{
+      font-size:20px;
+      margin-bottom:15px;
+      color:#444;
+    }
+
+    /* Footer */
+
+    footer{
+      text-align:center;
+      background:#2563eb;
+      color:white;
+      padding:20px;
+      margin-top:40px;
+      font-size:18px;
+    }
+
+    /* Responsive */
+
+    @media(max-width:768px){
+
+      .header h1{
+        font-size:42px;
+      }
+
+      .header p{
+        font-size:18px;
+      }
+
+      section h2{
+        font-size:30px;
+      }
+
+      .about{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .about-text p{
+        font-size:18px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <div class="header">
+
+    <h1>Khushi Wakodikar</h1>
+
+    <p>
+      Web Developer  | Programmer
+    </p>
+
+  </div>
+
+  <!-- About Section -->
+
+  <section>
+
+    <h2>About Me</h2>
+
+    <div class="about">
+
+      <!-- Girl Photo Link -->
+
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" alt="Girl Photo">
+
+      <div class="about-text">
+
+        <p>
+          Hello! I am Khushi Wakodikar, a passionate web developer who loves
+          creating beautiful and responsive websites using HTML, CSS, and JavaScript.
+          I enjoy learning new technologies and building creative projects that
+          improve user experience.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Skills Section -->
+
+  <section>
+
+    <h2>Skills</h2>
+
+    <div class="skills-list">
+
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+
+  <section>
+
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+
+        <h3>Job Board Website</h3>
+
+        <p>
+          A responsive job portal website where users can search and apply for jobs.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>Quiz Application</h3>
+
+        <p>
+          Online quiz platform with multiple-choice questions and score tracking.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>Calculator</h3>
+
+        <p>
+          Stylish calculator created using HTML, CSS, and JavaScript.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Resume Section -->
+
+  <section>
+
+  <!-- Contact Section -->
+
+  <section class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>Email: khushiwakodikar5@gmail.com</p>
+
+    <p>Phone: +91 7507621005</p>
+
+    <p>Location: Nagpur, India</p>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    © 2026 Khushi Wakodikar | All Rights Reserved
+  </footer>
+
+</body>
+</html>
